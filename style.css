@@ -76,9 +76,33 @@ form label{
 }
 
 @media screen and (max-width: 600px){
+    
     form > div > div{
         flex-direction: column;
         width: 500px;
     }
 }
 
+footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    background-color: #252525;
+    height: 300px;
+    color:#F1F1F1;
+}
+
+footer .contact ul{
+    display: flex;
+    height: 1rem;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+footer ul li{
+    cursor: pointer;
+}
+
+footer h2{
+    text-align: center;
+}
