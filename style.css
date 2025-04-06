@@ -86,10 +86,9 @@ form label{
 footer{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 10px;
     background-color: #252525;
-    height: 300px;
     color:#F1F1F1;
+    height: auto;
 }
 
 footer .contact ul{
@@ -99,14 +98,40 @@ footer .contact ul{
     justify-content: space-between;
 }
 
-footer ul li{
+footer ul li , footer .contact-labels label{
     cursor: pointer;
 }
 
 footer h2{
     text-align: center;
+    border-bottom: 2px solid #888;
 }
 
 a{
     color: white;
+    text-decoration: none;
+}
+
+.contact-labels{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p{
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+footer hr{
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, rgba(128, 128, 128, 0), #888, rgba(128, 128, 128, 0));
+    margin: 0.5rem;
+}
+
+@media screen and (max-width: 666px){
+    .contact ul{
+        flex-direction: column;
+    }
 }
